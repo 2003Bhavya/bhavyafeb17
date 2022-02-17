@@ -1,0 +1,16 @@
+n=int(input('enter a fibonacci number:'))
+f=0
+s=1
+sum=0
+for num in range(0,n):
+    print(f, end=' ')
+    sum=sum+f
+    next=f+s
+    f=s
+    s=next
+print('\nthe sum of fibonacci numbers=%d'%sum)
+
+output
+enter a fibonacci number:8
+0 1 1 2 3 5 8 13 
+the sum of fibonacci numbers=33
